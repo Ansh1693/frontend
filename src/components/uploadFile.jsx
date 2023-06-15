@@ -59,7 +59,7 @@ const UploadFile = () => {
         <div className="w-full h-screen flex flex-col gap-4 justify-center items-center">
         <form className="w-full flex flex-col gap-4 items-center justify-center" onSubmit={handleSubmit}>
             <label htmlFor="file_input" className="block mb-2 text-xl font-medium text-gray-900 dark:text-white">Upload file</label>
-            <input type="file" id="file_input" className="block  text-lg text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" onChange={handleFileChange} />
+            <input type="file" id="file_input" required className="block  text-lg text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" onChange={handleFileChange} />
             <button className="text-xl bg-gray-100 p-4 rounded-lg px-8" type='submit'>Upload</button>
         </form>
             </div>
