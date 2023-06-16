@@ -26,7 +26,6 @@ const UploadFile = () => {
       };
       const handleSubmit = async e => {
         e.preventDefault();
-        console.log("e");
         if (!file) {
           alert("Please select a file");
           return;
@@ -42,14 +41,11 @@ const UploadFile = () => {
           if (response.message === "failure") {} else {
               setPage(1);
             setData(response);
-            console.log(tableData);
           }
-          // console.log(response);
     
-          // console.log(result);
         } catch (error) {
-          console.error(error);
-          alert("Error uploading file");
+          // console.error(error);
+          alert(error);
         }
       };
 
